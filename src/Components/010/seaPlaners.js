@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   { id: 1, type: 'man', name: 'Lina', color: 'blue' },
   { id: 2, type: 'car', name: 'Opel', color: 'red' },
   { id: 3, type: 'animal', name: 'Vilkas', color: 'green' },
@@ -10,3 +10,5 @@ export const data = [
   { id: 9, type: 'car', name: 'ZIL', color: 'red' },
   { id: 10, type: 'man', name: 'Teta Toma', color: 'yellow' },
 ];
+
+export { data };

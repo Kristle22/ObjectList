@@ -1,8 +1,10 @@
 import './App.css'
-import EntryFilter from './Components/010/EntryFilter'
+
 import OddorEven from './Components/010/OddorEven'
-// import { data } from './Components/010_ObjectList/seaPlaners'
 import Patchwork from './Components/010/PatchWork.jsx'
+import Jura from './Components/Jura'
+import Pasaulis from './Components/Pasaulis'
+import Vandenynas from './Components/Vandenynas'
 
 function App() {
   return (
@@ -15,7 +17,12 @@ function App() {
           <OddorEven entry='even' />
           <h3>Odd entries:</h3>
           <OddorEven entry='odd' />
-          <EntryFilter />
+          <h3 style={{ color: 'skyblue' }}>Komponentas Jura</h3>
+          <Jura />
+          <h3 style={{ color: 'seagreen' }}>Komponentas Vandenynas</h3>
+          <Vandenynas />
+          <h3>Komponentas Pasaulis</h3>
+          <Pasaulis />
         </div>
       </header>
     </div>
