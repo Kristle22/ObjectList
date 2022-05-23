@@ -5,9 +5,13 @@ function Tvenkinys({ list }) {
       <h2 style={{ color: 'bisque' }}>Even list entries:</h2>
       {list
         .sort((a, b) => (a.id > b.id ? 1 : -1))
-        .map((el) => (el.id % 2 ? null : <Daiktas key={el.id} list={el} />))}
+        .map((el) =>
+          el.id % 2 ? null : <Daiktas key={el.id} list={el} color='crimson' />
+        )}
       <h2 style={{ color: 'bisque' }}>Odd list entries:</h2>
-      {list.map((el) => (el.id % 2 ? <Daiktas key={el.id} list={el} /> : null))}
+      {list.map((el) =>
+        el.id % 2 ? <Daiktas key={el.id} list={el} color='crimson' /> : null
+      )}
     </>
   )
 }

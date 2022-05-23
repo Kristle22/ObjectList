@@ -6,6 +6,7 @@ import Jura from './Components/Jura'
 import Pasaulis from './Components/Pasaulis'
 import Tvenkinys from './Components/Tvenkinys'
 import Vandenynas from './Components/Vandenynas'
+import Bala from './Components/Bala'
 
 function App() {
   return (
@@ -18,14 +19,16 @@ function App() {
           <OddorEven entry='even' />
           <h3>Odd entries:</h3>
           <OddorEven entry='odd' />
-          <Tvenkinys list={data} />
+          <h3>Masyvas SeaPlaners</h3>
+          <Bala list={data} color='crimson' />
+          <Tvenkinys list={data} color='red' />
           <h3 style={{ color: 'skyblue' }}>Komponentas Jura</h3>
-          <Jura />
+          <Jura color='crimson' />
           <h3 style={{ color: 'seagreen' }}>Komponentas Vandenynas</h3>
           <Vandenynas />
           <h3>Komponentas Pasaulis</h3>
           <div style={{ textAlign: 'left' }}>
-            <Pasaulis list={data} color='red' />
+            <Pasaulis list={data} />
           </div>
         </div>
       </header>

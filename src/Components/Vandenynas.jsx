@@ -7,11 +7,11 @@ function Vandenynas() {
   return (
     <>
       <h4>Sorted by type:</h4>
-      <Tipas />
+      <Tipas color='crimson' />
       <h4>Sorted by name:</h4>
-      <Vardas />
+      <Vardas color='crimson' />
       <h4>Sorted by color:</h4>
-      <Spalva />
+      <Spalva color='crimson' />
     </>
   )
 }

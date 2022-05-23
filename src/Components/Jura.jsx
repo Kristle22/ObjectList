@@ -3,22 +3,23 @@ import Laivas from './Laivas'
 import Valtis from './Valtis'
 import Sala from './Sala'
 
-function Jura() {
+function Jura({ color }) {
   // const fish = data[3]
   // const { id, type, name, color } = fish
 
   const fish = data
     .filter((el) => el.type === 'fish')
     .map((el) => (
-      <div key={el.id} style={{ textAlign: 'left', color: 'salmon' }}>
-        id: {el.id}, type: {el.type}, name: {el.name}, color: {el.color}
+      <div key={el.id} style={{ textAlign: 'left', color: 'cyan' }}>
+        id: {el.id}, type: {el.type},{' '}
+        <span style={{ color: color }}>name: {el.name}</span>, color: {el.color}
       </div>
     ))
   return (
     <>
-      <Valtis />
-      <Laivas />
-      <Sala />
+      <Valtis color='crimson' />
+      <Laivas color='crimson' />
+      <Sala color='crimson' />
       {fish}
     </>
   )
