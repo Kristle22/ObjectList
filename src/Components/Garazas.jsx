@@ -1,14 +1,14 @@
-import { data } from './010/seaPlaners'
+// import { data } from './010/seaPlaners'
 
-function Garazas() {
-  const car = data
-    .filter((el) => el.type === 'car')
-    .map((el) => (
-      <div key={el.id}>
-        id: {el.id}, type: {el.type}, name: {el.name}, color: {el.color}
+function Garazas({ list, color }) {
+  if (list.type === 'car')
+    return (
+      <div>
+        id: {list.id}, type: {list.type},{' '}
+        <span style={{ color: color }}> name: {list.name}</span>, color:{' '}
+        {list.color}
       </div>
-    ))
-  return car
+    )
 }
 
 export default Garazas

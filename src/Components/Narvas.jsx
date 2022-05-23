@@ -1,14 +1,14 @@
-import { data } from './010/seaPlaners'
+// import { data } from './010/seaPlaners'
 
-function Narvas() {
-  const animal = data
-    .filter((el) => el.type === 'animal')
-    .map((el) => (
-      <div key={el.id}>
-        id: {el.id}, type: {el.type}, name: {el.name}, color: {el.color}
+function Narvas({ list, color }) {
+  if (list.type === 'animal')
+    return (
+      <div>
+        id: {list.id}, type: {list.type},{' '}
+        <span style={{ color: color }}> name: {list.name}</span>, color:{' '}
+        {list.color}
       </div>
-    ))
-  return animal
+    )
 }
 
 export default Narvas
