@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Tipas({ color }) {
-  const sorted = data
+function Tipas({ list, color }) {
+  const sorted = list
     .sort((a, b) => (a.type > b.type ? 1 : -1))
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left' }}>

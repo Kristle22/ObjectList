@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Spalva({ color }) {
-  const sorted = data
+function Spalva({ list, color }) {
+  const sorted = list
     .sort((a, b) => (a.color > b.color ? 1 : -1))
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left' }}>

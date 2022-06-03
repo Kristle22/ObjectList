@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Sala({ color }) {
-  const animal = data
+function Sala({ list, color }) {
+  const animal = list
     .filter((el) => el.type === 'animal')
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left', color: 'greenyellow' }}>

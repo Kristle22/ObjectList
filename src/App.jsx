@@ -23,9 +23,9 @@ function App() {
           <Bala list={data} color='crimson' />
           <Tvenkinys list={data} color='red' />
           <h3 style={{ color: 'skyblue' }}>Komponentas Jura</h3>
-          <Jura color='crimson' />
+          <Jura data={data} color='crimson' />
           <h3 style={{ color: 'seagreen' }}>Komponentas Vandenynas</h3>
-          <Vandenynas />
+          <Vandenynas data={data} />
           <h3>Komponentas Pasaulis</h3>
           <div style={{ textAlign: 'left' }}>
             <Pasaulis list={data} />

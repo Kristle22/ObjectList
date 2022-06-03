@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Laivas({ color }) {
-  const car = data
+function Laivas({ list, color }) {
+  const car = list
     .filter((el) => el.type === 'car')
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left', color: 'cadetblue' }}>

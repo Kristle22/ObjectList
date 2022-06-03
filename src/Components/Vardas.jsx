@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Vardas({ color }) {
-  const sorted = data
+function Vardas({ list, color }) {
+  const sorted = list
     .sort((a, b) => (a.name > b.name ? 1 : -1))
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left' }}>

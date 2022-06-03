@@ -1,9 +1,8 @@
-import { data } from './010/seaPlaners'
 import Laivas from './Laivas'
 import Valtis from './Valtis'
 import Sala from './Sala'
 
-function Jura({ color }) {
+function Jura({ data, color }) {
   // const fish = data[3]
   // const { id, type, name, color } = fish
 
@@ -17,9 +16,9 @@ function Jura({ color }) {
     ))
   return (
     <>
-      <Valtis color='crimson' />
-      <Laivas color='crimson' />
-      <Sala color='crimson' />
+      <Valtis list={data} color='crimson' />
+      <Laivas list={data} color='crimson' />
+      <Sala list={data} color='crimson' />
       {fish}
     </>
   )

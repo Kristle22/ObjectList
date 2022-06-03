@@ -1,7 +1,5 @@
-import { data } from './010/seaPlaners'
-
-function Valtis({ color }) {
-  const man = data
+function Valtis({ list, color }) {
+  const man = list
     .filter((el) => el.type === 'man')
     .map((el) => (
       <div key={el.id} style={{ textAlign: 'left', color: 'burlywood' }}>
